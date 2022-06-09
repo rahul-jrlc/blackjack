@@ -16,12 +16,15 @@ h1 {
     
 }
 
-#start-button {
+button {
     color: #016f32;
     font-size: 1em;
     width: 180px;
+    padding: 10px;
     background: goldenrod;
     cursor: pointer;
-    height: 60px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
 
 }
