@@ -43,8 +43,8 @@ function renderGame() {
 }
 
 function startGame() {
-    isAlive = true
-    let firstCard = getRandomCard()
+    isAlive = true   //ONLY AFTER CLICKING START GAME DOES THE USER BECOME "ALIVE" IN THE GAME
+    let firstCard = getRandomCard()  //RANDOM CARDS ARE GENERATED ONLY AFTER STARTING THE GAME, NOT BEFOR(ON OPENING THE GAME PAGE ITSELF)
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
@@ -52,9 +52,12 @@ function startGame() {
 }
 
 function newCard() {
-    console.log("Drawing a new card from the deck...")
-    let newCard = getRandomCard()
-    sum += newCard
-    cards.push(newCard)
-    renderGame()
+    if (isAlive === true && hasBlackjack === false) {
+        console.log("Drawing a new card from the deck...")
+        let newCard = getRandomCard()
+        sum += newCard
+        cards.push(newCard)
+        renderGame()
 }
+ }
+    
