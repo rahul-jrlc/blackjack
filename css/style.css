@@ -1,0 +1,27 @@
+body {
+    background: url("../img/background.png");
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el { 
+    font-style: italic;
+    
+}
+
+#start-button {
+    color: #016f32;
+    font-size: 1em;
+    width: 180px;
+    background: goldenrod;
+    cursor: pointer;
+    height: 60px;
+
+}
