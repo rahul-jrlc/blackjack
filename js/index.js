@@ -8,7 +8,13 @@ messageEl = document.getElementById("message-el")
 sumEl = document.getElementById("sum-el")
 cardsEl = document.getElementById("cards-el")
 
-console.log(cards)
+let player = {
+    name: "Tinku",
+    chips: 200
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {    
     let randomCardNumber = Math.floor(Math.random()*13) + 1
@@ -52,7 +58,7 @@ function startGame() {
 }
 
 function newCard() {
-    if (isAlive === true && hasBlackjack === false) {
+    if (isAlive === true && hasBlackjack === false) {  //ONLY GENERATE NEW CARD IF PLAYER HAS STARTED THE GAME AND DOES NOT HAVE BLACKJACK
         console.log("Drawing a new card from the deck...")
         let newCard = getRandomCard()
         sum += newCard
