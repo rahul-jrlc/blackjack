@@ -7,9 +7,13 @@ let isAlive = true
 
 let message = ""
 messageEl = document.getElementById("message-el")
-console.log(messageEl)
+// console.log(messageEl)
+
+sumEl = document.getElementById("sum-el")
+// console.log(sumEl)
 
 function startGame() {
+    sumEl.textContent = sumEl.textContent + " " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {

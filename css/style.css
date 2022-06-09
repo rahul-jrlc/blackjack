@@ -18,13 +18,12 @@ h1 {
 
 button {
     color: #016f32;
-    font-size: 1em;
-    width: 180px;
+    font-size: 0.7em;
+    width: 150px;
     padding: 10px;
     background: goldenrod;
     cursor: pointer;
     font-weight: bold;
-    border: none;
     border-radius: 2px;
 
 }
